@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <cs2114.mazesolver.MazeView
+        android:id="@+id/mazeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/statusLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="13"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ToggleButton
+        android:id="@+id/drawEraseMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="wallToggle"
+        android:text="Erase Walls"
+        android:textOff="Erase Walls"
+        android:textOn="Draw Walls" />
+
+    <Button
+        android:id="@+id/solveMaze"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="solveMaze"
+        android:text="Solve Maze" />
+
+    <Button
+        android:id="@+id/clearMaze"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:onClick="clearMaze"
+        android:text="Clear Maze" />
+
+</LinearLayout>
